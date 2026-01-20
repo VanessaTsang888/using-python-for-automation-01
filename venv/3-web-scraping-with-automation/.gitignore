@@ -1,0 +1,16 @@
+# ignore these directories
+1-introduction/
+bin/
+Exercise Files/
+lib/
+include/
+
+
+
+# ignore these files
+*pyvenv.cfg
+*README-draft-01.md
+echo "*.png" >> .gitignore
+*extracted_firstx10-book-titles-with-selenium.png
+*extracted-all-book-titles.png
+*title="I, Medusa".png
