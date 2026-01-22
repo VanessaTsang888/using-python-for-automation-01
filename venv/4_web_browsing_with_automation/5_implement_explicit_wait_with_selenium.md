@@ -1,11 +1,17 @@
 # 5_implement_explicit_wait_with_selenium
 
-Test site: [The Internet Herokuapp Dynamic Controls](https://the-internet.herokuapp.com/dynamic_controls)
+The goal is to implement a wait strategy in Python. For this task we will automate browser interactions with an example test website called [The Internet Herokuapp Dynamic Controls](https://the-internet.herokuapp.com/dynamic_controls)
 
-## Testing
+## In Detail
+
+- Selenium's explicit wait strategy allows you to wait for specific elements to appear on a webpage before automating browser interactions. We'll learn how to implement this strategy in Python. For this example, you'll be automating browser interactions with an example website. Navigate to this webpage. Go ahead and manually interact with this page to get an understanding of how it works. First, focus on the bottom half of the webpage. Click on the Enable button. Notice the green loading bar and the "Wait for it" message. The page takes some time, and then says it's enabled, and the disabled button appears. Click the Disable button now. The page takes some time, and then says it's disabled, and the Enable button appears again. Next, focus on the top half of the webpage. Click on the Remove button. Notice how the page takes some time, and then says it's gone. The checkbox reappears and the Add button appears. Click on the Add button now. Add page takes some time and then says it's back. The checkbox reappears and the Remove button shows up again. Finally, check the checkbox.
+
+  The goal is to automate these interactions in Python, which will involve <mark>Selenium's explicit waiting strategy</mark>. The necessary libraries have been imported at the top, including 'WebDriverWait', which supports Selenium's explicit waiting strategy, and expected_conditions aliased as EC, which helps us explicitly wait until a certain condition is met. Define the URL. Paste in the URL we copied previously to replace the placeholder in the string. Then the Selenium 'WebDriver' gets instantiated and automatically opens a Chrome browser. Note that if you're using a different browser, we can adjust this line of code to suit your needs. The browser window is maximized. Then 'driver.get' is called to load the webpage. Now you need to define a wait. Call 'WebDriverWait', and pass in driver as a first argument, and 10 as a second argument. When this is paired with a condition for an explicit wait, the 'WebDriver' will wait 10 seconds for the condition to be met before executing the next step in the program. Go back to the webpage and reload the page. For each element that needs to be found, use the Inspect tool in your browser to copy the XPath and then paste it into your code, replacing the placeholders. First, we'll get the XPath for the Enable button. Then the Enable button is clicked. Second, I'll get the XPath for the Disable button. An explicit wait is used to wait until the Disable button is clickable before finding it. Once the disabled button is clickable, it gets clicked. Third, we'll get the XPath for the Remove button, then the Remove button is clicked. Fourth, we'll get the XPath for the Add button. An explicit wait is used to wait until the Add button is clickable before finding it. Once the Add button is clickable, it gets clicked. Fifth, we'll get the XPath for the checkbox. An explicit wait is used to wait until the checkbox is clickable before finding it. Once the checkbox is clickable, it gets clicked. After each element is interacted with, `sleep(3)` is called to pause the program for three seconds, just to make it easier for you to view the results. Save your changes, and run the program. Awesome, so the program successfully automated the process of interacting with all of the elements in the example website.
+
+### Testing
 
 `python3 implement_explicit_wait.py`
 
-### Results
+#### Results
 
 The program successfully automated the process of interacting with all of the elements in the example website - see screenshot.
