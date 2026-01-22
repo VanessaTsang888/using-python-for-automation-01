@@ -10,8 +10,8 @@ The goal is to implement a wait strategy in Python. For this task we will automa
 
 ### Testing
 
-`python3 implement_explicit_wait.py`
+To run the program: `python3 implement_explicit_wait.py`
 
 #### Results
 
-The program successfully automated the process of interacting with all of the elements in the example website - see screenshot.
+The program successfully automated the process of interacting with all of the elements in the example website - see screenshot: [Implementation in Action](./implemented_explicit_wait_with_selenium.png).
