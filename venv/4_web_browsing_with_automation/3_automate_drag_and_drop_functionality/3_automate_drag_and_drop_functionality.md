@@ -1,18 +1,18 @@
 # 3_automate_drag_and_drop_functionality
 
-Test site: [Sortable](https://sortablejs.github.io/Sortable/)
-
-File: automate_drag_and_drop.py
+Acquire the skills for automating drag and drop functionality in Python with Selenium.
 
 Test site: [DHTML Goodies.com](http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html)
 This site is no long available.
 
 Test site: [Dragula](https://bevacqua.github.io/dragula/)
-Similar to DHTML Goodies.com testing site.
+Dragula is the closest match to DHTML Goodies.
+
+Code File: automate_drag_and_drop.py
 
 ## How in Detail
 
-Another common browser interaction is drag and drop. Drag and drop allows users to move items from one part of a webpage to another part, and even move items between different applications. We'll acquire the skills for automating drag and drop functionality in Python with Selenium.
+Another common browser interaction is drag and drop. Drag and drop allows users to move items from one part of a webpage to another part, and even move items between different applications. We'll acquire the skills for <mark>automating drag and drop functionality in Python with Selenium</mark>.
 
 The above demo website for testing out automated drag and drop browser interactions. Our eventual goal is to build automation for dragging the capital tiles and dropping them into the respective country tiles. To start out, you'd like to automate dragging the Washington tile and dropping it into the United States tile. Copy the URL and open up 'automate_drag_and_drop.py' in VS Code.
 
